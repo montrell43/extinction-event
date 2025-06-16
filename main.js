@@ -3,7 +3,7 @@ const lines = document.querySelectorAll("ol li");
 // Once cliked the ol properties will be striked through with line upon effect
 lines.forEach(line => {
     line.addEventListener("click", function(event) {
-    event.target.style.textDecoration = "line-through";
+    line.style.textDecoration = "line-through";
 })
 })
 
@@ -11,7 +11,7 @@ const fades = document.querySelectorAll("ul li");
 // When clicked the properties of the ul elements will fade out using opacityto .0
 fades.forEach(fade => {
     fade.addEventListener("click", function(event) {
-        event.target.style.opacity = "0.0";
+        fade.style.opacity = "0.0";
     })
 })
 
@@ -20,7 +20,7 @@ const images = document.querySelectorAll("img");
 images.forEach(img => {
     img.style.transition = "transform 0.2s ease-out"
     img.addEventListener("click", function(event) {
-        event.target.style.transform = "scaleX(0)";
+        img.style.transform = "scaleX(0)";
         
     })
 })
